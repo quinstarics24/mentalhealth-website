@@ -19,10 +19,8 @@ A complete mental health support platform built using HTML, CSS, PHP, and MySQL.
 - 🧑‍⚕️ Therapist/Professional Dashboard
 - 📅 Book and Manage Therapy Sessions
 - 📨 Live Chat and Contact Forms
-- 💳 Donation System (MTN Mobile Money Integrated)
-- 🤝 Volunteer Registration
 - 📚 Resource Sharing
-- 🔔 Admin Panel with Full Control (Users, Volunteers, Payments, Messages)
+- 🔔 Admin Panel with Full Control (Users, Payments, Messages)
 - 📩 Email Notifications using PHPMailer
 - 🔒 Secure Authentication System
 - 🧾 SQL Database (included)
