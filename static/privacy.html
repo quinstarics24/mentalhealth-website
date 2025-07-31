@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SafeSpace</title>
+<style>/* Reset default browser styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+   
+    /* Body styles */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        line-height: 2.6;
+        color: #333;
+        background-color: #f9f9f9;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    /* Header styles */
+    header {
+        background-color: #fff;
+        padding: 40px 20px;
+        border-bottom: 1px solid #eaeaea;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        font-weight: 700;
+    }
+    
+    /* Main content styles */
+    main {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    section {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    p {
+        margin-bottom: 15px;
+        color: #555;
+    }
+    
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+        
+        header {
+            padding: 20px;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+    
+    /* Links styling */
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    /* Optional: Add a subtle brand color accent */
+    .brand-accent {
+        color: #3498db;
+    }</style>
+</head>
+ <!-- Placeholder for Header -->
+ <div id="header-container"></div>
+<body>
+    
+    <header>
+        <h1>Privacy Policy</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to SafeSpace. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information.</p>
+        </section>
+        <section>
+            <h2>Information We Collect</h2>
+            <p>We may collect personal information such as your name, email address, and any details you provide while using our services.</p>
+        </section>
+        <section>
+            <h2>How We Use Your Information</h2>
+            <p>We use your information to provide services, improve our platform, and communicate with you.</p>
+        </section>
+        <section>
+            <h2>Data Protection</h2>
+            <p>We implement security measures to protect your personal data from unauthorized access.</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions, reach out to us at support@safespace.com.</p>
+        </section>
+    </main>
+     <!-- Footer Placeholder -->
+     <div id="footer-placeholder"></div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- Load Header and Footer -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Load header
+        fetch("header.php")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+        
+        // Load footer
+        fetch('footer.php')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+            .catch(err => console.error('Error loading footer:', err));
+    });
+</script>
+</body>
+</html>

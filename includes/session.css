@@ -1,0 +1,175 @@
+<style>
+        :root {
+            --primary: #5569d4;
+            --primary-hover: #0077b6;
+            --secondary: #35b88f;
+            --secondary-hover: #2ca37c;
+            --light-bg: #f5f7fd;
+            --dark-text: #2d3748;
+            --light-text: #718096;
+            --card-shadow: 0 10px 25px rgba(85, 105, 212, 0.1);
+            --hover-shadow: 0 15px 35px rgba(85, 105, 212, 0.15);
+            --card-border-radius: 16px;
+            --btn-border-radius: 8px;
+        }
+        
+        body {
+            background-color: var(--light-bg);
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-text);
+            line-height: 1.7;
+        }
+
+        .navbar {
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1.75rem;
+            letter-spacing: -0.025em;
+        }
+
+        .page-header {
+            padding: 4rem 0 2rem;
+            background: linear-gradient(to right,rgb(82, 147, 226),rgb(236, 228, 223));
+            color: white;
+            margin-bottom: 3rem;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 5px 20px rgba(85, 105, 212, 0.2);
+        }
+        
+        .page-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .payment-card {
+            border-radius: var(--card-border-radius);
+            box-shadow: var(--card-shadow);
+            background-color: #fff;
+            padding: 2rem;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            border-radius: var(--btn-border-radius);
+            font-weight: 600;
+            padding: 0.75rem 1.25rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+        }
+        
+        .therapist-preview {
+            display: flex;
+            align-items: center;
+            background-color: rgba(85, 105, 212, 0.05);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .therapist-preview img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-right: 1rem;
+        }
+        
+        .therapist-details h5 {
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .therapist-details p {
+            margin-bottom: 0;
+            color: var(--light-text);
+        }
+        
+        .session-options {
+            background-color: rgba(53, 184, 143, 0.1);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-check-input:checked {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .payment-methods {
+            background-color: rgba(85, 105, 212, 0.05);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-request {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+            color: white;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-request:hover {
+            background-color: var(--secondary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--hover-shadow);
+        }
+        
+        .professional-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: rgba(85, 105, 212, 0.05);
+            border-radius: 12px;
+        }
+        
+        .professional-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        
+        .alert {
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .therapist-preview, .professional-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .therapist-preview img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
