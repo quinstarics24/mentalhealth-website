@@ -1,7 +1,5 @@
 # 🧠 Mental Health Website - SafeSpace
 
-# 🧠 Mental Health Website - SafeSpace
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/quinstarics24/mentalhealth-website)
 ![GitHub stars](https://img.shields.io/github/stars/quinstarics24/mentalhealth-website?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/quinstarics24/mentalhealth-website?style=social)
